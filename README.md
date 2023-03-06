@@ -16,7 +16,7 @@ pip3 install osmium Pillow numpy
 ```
 1. Download project files [here](https://github.com/Aveygo/PyOSMRenderer/archive/refs/heads/main.zip)
 2. Download your osm data from https://download.geofabrik.de/ (anything .osm.pbf) and place in root folder next to build_database.py
-3. Build database!
+3. Build the database
 ```
 python3 build_database.py <the .osm.pbf file>
 ```
