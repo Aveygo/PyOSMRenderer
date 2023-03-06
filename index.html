@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    </head>
+    <div id="map"></div>
+</html>
+<style>
+    #map { height: 100%; }
+
+</style>
+<script>
+var map = L.map('map')
+
+// Set up the OSM layer
+L.tileLayer(
+    //"https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+    'http://127.0.0.1:8000/tile/{z}/{x}/{y}.jpg'
+).addTo(map);
+
+// Set map view to a given place and zoom (sydney)
+map.setView([-33.8688,151.2093], 13);
+
+</script>
+
+
