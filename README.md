@@ -25,3 +25,9 @@ python3 build_database.py <the .osm.pbf file>
 python3 api.py
 ```
 5. Open the browser and go to http://localhost:8000
+
+### Emphasis on the minimal
+
+This is a very bare bones approach to the task of mapping and was meant for dipping my toes into rtrees, cairo, caching, and other performance guides.
+I highly recommended [osmnx](https://github.com/gboeing/osmnx) for a more fleshed out project.
+The sydney_sample.png was rendered with tile resolution=1024 and query_limit=10000 for a more detailed result.
